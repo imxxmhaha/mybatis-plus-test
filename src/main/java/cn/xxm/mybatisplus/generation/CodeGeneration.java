@@ -55,7 +55,7 @@ public class CodeGeneration {
         strategy.setSuperServiceClass(null);
         strategy.setSuperServiceImplClass(null);
         strategy.setSuperMapperClass(null);
-
+        strategy.setRestControllerStyle(true);
         mpg.setStrategy(strategy);
 
         // 包配置
@@ -65,7 +65,7 @@ public class CodeGeneration {
         pc.setService("service");
         pc.setServiceImpl("service.impl");
         pc.setMapper("dao");
-        pc.setEntity("pojo");
+        pc.setEntity("entity");
         pc.setXml("mapper");
         mpg.setPackageInfo(pc);
 
